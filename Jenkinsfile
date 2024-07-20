@@ -3,11 +3,11 @@ echo "Hello World"
 
 node {
   
-  stage("checkour"){
-        sh "ls"
-        git branch:"main", url: "https://github.com/SpWorkspace22/spring-petclinic.git"
-        sh "ls" 
-  }
+  // stage("checkour"){
+  //       sh "ls"
+  //       git branch:"main", url: "https://github.com/SpWorkspace22/spring-petclinic.git"
+  //       sh "ls" 
+  // }
   stage("build"){
         sh "./mvnw package"
   }
